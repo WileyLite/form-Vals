@@ -1,7 +1,22 @@
-.container {
+.container,
+header {
   align-items: center;
+  width: 700px;
+}
+
+.form-contents {
+  position: fixed;
+  align-items: center;
+  width: 60%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  height: 100%;
+  box-shadow: 1px 1px 1px black;
+  left: 15%;
 }
 
 body {
-  align-content: center;
+  align-items: center;
+  color: #eee;
 }
