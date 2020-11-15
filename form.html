@@ -15,37 +15,38 @@
                 Registration Form
             </h1>
         </header>
-        <div class="form-contents">
-        <form name="foName">
+        <form name="myForm" class="form-contents" action="form.html" onsubmit="return validateForm()" method="post">
+            
+        <p id="foName">
             <label for="input1"> Name </label>
-            <input type="fname" class="form-control" id="input1" placeholder="Your full name please!" value="">
-        </form>
+            <input type="text" name="fname" class="form-control" id="input1" placeholder="Your full name please!" value="">
+        </p>
 
-        <form name="Password">
+        <p id="Password">
             <label for="input1"> Password </label>
             <input type="password" class="form-control" id="input1" placeholder="Password will be hidden">
             <!-- name="password" id="password" placeholder="Password will be hidden"><i class="far fa-eye" id="togglePassword"></i> -->
             <small>Password must contain at least 1 capital letter, 1 number and one special character (!@#$%^&*)</small>
             <small id="errorm1"></small>
-        </form>
+        </p>
 
-        <form name="conPassword">
+        <p id="conPassword">
             <label for="input1"> Confirm Password </label>
             <input type="password" class="form-control" id="input1" value="">
             <!-- name="password" id="password" placeholder="Password will be hidden"><i class="far fa-eye" id="togglePassword"></i> -->
             <small id="errorM2"></small>
-        </form>
-        <form name="email">
+        </p>
+        <p id="email">
             <label for="input1"> Email </label>
             <input type="email" class="form-control" id="input1" placeholder="your@email.com">
-        </form>
+        </p>
 
-        <form name=Address>
+        <p id=Address>
             <label for="input1"> Address </label>
             <input type="address" class="form-control" id="input1" value="">
-        </form>
+        </p>
 
-        <form name="states">
+        <p id="states">
             <label for="input1"> State </label>
             <select class="custom-select">
                 <option selected>State</option>
@@ -100,17 +101,17 @@
                 <option>Wisconsin</option>
                 <option>Wyoming</option>
             </select> 
-        </form>
+        </p>
 
-        <form name="zippy">
+        <p id="zippy">
             <label for="input1"> Zip Code </label>
             <input type="name" class="form-control" id="input1" value="">
-        </form>
+        </p>
 
-        <form id="button"><input type="submit" value="Submit">
+        <p id="button"><input type="submit" value="Submit">
         </input>
-        </form>
-
+    </p>
+</form>
     </div>
 </body>
 <script type="text/Javascript" src="form.js"></script>
